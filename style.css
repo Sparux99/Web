@@ -141,7 +141,7 @@ input::-webkit-inner-spin-button {
     position: absolute;
     left: 0;
     right: 0;
-    background-image:  url("../assest/img-1.svg"),url("../assest/img-2.svg"),url("../assest/img-3.svg"),url("../assest/img-4.svg");
+    background-image:  url("../img-1.svg"),url("../img-2.svg"),url("../img-3.svg"),url("../img-4.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
