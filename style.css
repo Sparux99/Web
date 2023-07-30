@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+:root{
+    --first-color: hsl(195, 100%, 30%);
+    --text-color: hsl(210, 24%, 15%)
+}
+/*global*/
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 55%, 85%);
+    font-family:  "Poppins", sans-serif;
+}
+
+a {
+    font-size: 0.938rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Lora", serif;
+}
+nav{
+    margin: 2% 10% 2% 10%;
+}
+ul{
+    z-index: 1;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*html*/
+
+@media (min-width:764px) {
+    nav {
+        display: flex;
+        
+    }
+    nav span{
+        display: none;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        width: 100%;
+    }
+
+    nav li {
+        margin-left: 5%;
+    }
+    nav button {
+        display: none;
+    }
+    .cardy{
+        width: 400px;
+        margin-left: 10%;
+    }
+    .cardy h1{
+        font-size: 1.75rem;
+    }
+}
+
+
+@media (max-width:763px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+    nav span{
+        position: relative;
+        left: 10px;
+        top: -14px;
+    }
+
+    #ul {
+        width: 150px;
+        background: #fff;
+        list-style: none;
+        padding: 10px;
+        position: absolute;
+        left: 60%;
+        top: 4%;
+        display: none;
+        transition: 0.3s;
+        
+    }
+
+    #alt1 {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    nav li{
+        margin-top: 10%;
+    }
+    nav li:not(:last-child){
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+    }
+    nav li a:hover{
+        transform: scale(1.2);
+    }
+    nav .img2{
+        width: 35px;
+        height: 35px;
+    }
+
+    #alt1:hover ~ #ul,#alt1:focus ~ #ul{
+        display: block;
+    }
+
+    .cardy{
+        width: 60%;
+        margin: 5% 20%;
+    }
+    .cardy h1{
+        font-size: 1.50rem;
+    }
+
+}
+@media (max-width:429px){
+    .cardy{
+        width: 90%;
+        margin: 10% 5%;
+    }
+    .cardy h1{
+        font-size: 1.45rem;
+    }
+}
+
+.container{
+    height: 700px;
+    width: 100%;
+    margin-top: 3%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image:  url("../assest/img-1.svg"),url("../assest/img-2.svg"),url("../assest/img-3.svg"),url("../assest/img-4.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*card*/
+
+.cardy{
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardy h1{
+    color: hsl(210, 52%, 20%);
+    text-decoration: underline;
+    text-align: center;
+    margin: 7% 0;
+}
+.cardy input{
+    color: var(--first-color);
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    width: 80%;
+    margin: 2% 10%;
+    height: 30px;
+    font-size: 1rem;
+}
+input:valid,input:focus{
+    outline: none;
+    padding-left: auto;
+}
+.cardy label{
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    pointer-events: none;
+    color: var(--text-color);
+    position: relative;
+    left: 11%;
+    top: -35px;
+    transition: 0.4s;
+}
+#ljihawi:not(:placeholder-shown) ~ .pl1,#ljihawi:focus ~ .pl1,
+#mora9aba1:not(:placeholder-shown) ~ .pl2,#mora9aba1:focus ~ .pl2,
+#mora9aba2:not(:placeholder-shown) ~ .pl3,#mora9aba2:focus ~ .pl3,
+#lwatani:not(:placeholder-shown) ~ .pl4,#lwatani:focus ~ .pl4{
+    color: var(--first-color);
+    top: -60px;
+    font-size: 0.8rem;
+}
+.cardy .inputs .inp{
+    height: 60px;
+}
+
+.cardy .ico1{
+    position: relative;
+    left: 80%;
+    top: -50px;
+    color: var(--first-color);
+    visibility: hidden;
+}
+.cardy button{
+    width: 30%;
+    margin: 4% 35%;
+    padding: 5%;
+    border: none;
+    outline: none;
+    color: white;
+    background-image:  linear-gradient(90deg,hsl(210, 55%, 20%),hsl(192, 62%, 25%));
+    border-radius: 5px;
+    font-family: "Lora", serif;
+}
+
+
